@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/dimen18sp"
+    android:gravity="left"
+    android:fontFamily="@font/worksans_medium"
+    android:textColor="@color/font_desc"
+    android:paddingBottom="@dimen/dimen6dp" />
+
+<!--
+    Tanggal     : Selasa, 26 April 2022
+    Deskripsi   : Design Activity untuk Spinner Dropdown
+    NIM         : 10119239
+    Nama        : Dea Inesia Sri Utami
+    Kelas       : IF6
+-->

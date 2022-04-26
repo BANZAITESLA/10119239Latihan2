@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".HomeActivity">
+
+    <!-- Layout container form Home-->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Layout container appbar -->
+        <RelativeLayout
+            android:id="@+id/layout_appbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Appbar Area -->
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@drawable/ic_header_profile"
+                app:menu="@menu/menu"
+                app:navigationIcon="@drawable/ic_side_menu" />
+            <!-- End of Appbar Area -->
+
+            <!-- Shadow Appbar -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen3dp"
+                android:layout_below="@id/appbar"
+                android:background="@color/shadow_header" />
+            <!-- End of Shadow Appbar -->
+
+        </RelativeLayout>
+        <!-- End of Layout container appbar -->
+
+        <!-- Foto profile Area -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:foregroundGravity="top"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="@dimen/dimen5dp"
+            app:layout_anchor="@+id/layout_appbar"
+            app:layout_anchorGravity="bottom|center" />
+        <!-- End of Foto profile Area -->
+
+        <!-- Layout Identitas, Informasi, serta Menu Area -->
+        <RelativeLayout
+            android:id="@+id/layout_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@id/layout_appbar"
+            app:layout_anchorGravity="bottom"
+            android:paddingTop="@dimen/dimen300dp">
+
+            <!-- TextView Identitas Nama -->
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen24dp"
+                android:layout_marginLeft="@dimen/dimen24dp"
+                android:layout_marginEnd="@dimen/dimen24dp"
+                android:layout_marginRight="@dimen/dimen24dp"
+                android:fontFamily="@font/worksans_medium"
+                android:gravity="center"
+
+                android:text="@string/nama"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/dimen18sp" />
+            <!-- End of TextView Identitas Nama -->
+
+            <!-- TextView Blood type -->
+            <TextView
+                android:id="@+id/blood_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nama"
+                android:layout_marginStart="@dimen/dimen24dp"
+
+                android:layout_marginLeft="@dimen/dimen24dp"
+                android:layout_marginEnd="@dimen/dimen24dp"
+                android:layout_marginRight="@dimen/dimen24dp"
+                android:fontFamily="@font/worksans_medium"
+
+                android:gravity="center"
+                android:text="@string/blood"
+                android:textColor="@color/font_title"
+                android:textSize="@dimen/dimen12sp" />
+            <!-- End of TextView Blood type -->
+
+            <!-- Layout Informasi -->
+            <RelativeLayout
+                android:id="@+id/layout_jumlah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/blood_type"
+                android:layout_marginTop="@dimen/dimen24dp"
+                android:orientation="vertical">
+
+                <!-- Separator -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen1dp"
+                    android:background="@color/separator" />
+                <!-- End of Separator -->
+
+                <!-- Layout Angka pada Informasi Area -->
+                <LinearLayout
+                    android:id="@+id/angka"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen24dp"
+
+                    android:layout_marginLeft="@dimen/dimen24dp"
+                    android:layout_marginTop="@dimen/dimen12dp"
+                    android:layout_marginEnd="@dimen/dimen24dp"
+                    android:layout_marginRight="@dimen/dimen24dp"
+                    android:orientation="horizontal">
+
+                    <!-- TextView untuk angka "Blood Give" -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/worksans_medium"
+
+                        android:gravity="center"
+                        android:text="75"
+                        android:textColor="@color/light_blue"
+                        android:textSize="@dimen/dimen22sp"
+                        android:textStyle="bold" />
+                    <!-- End of TextView untuk angka "Blood Give" -->
+
+                    <!-- TextView untuk angka "Blood Received" -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/worksans_medium"
+
+                        android:gravity="center"
+                        android:text="100"
+                        android:textColor="@color/light_blue"
+                        android:textSize="@dimen/dimen22sp"
+                        android:textStyle="bold" />
+                    <!-- End of TextView untuk angka "Blood Received" -->
+
+                    <!-- TextView untuk angka "Thanks" -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/worksans_medium"
+
+                        android:gravity="center"
+                        android:text="330"
+                        android:textColor="@color/light_blue"
+                        android:textSize="@dimen/dimen22sp"
+                        android:textStyle="bold" />
+                    <!-- End of TextView untuk angka "Blood Give" -->
+
+                </LinearLayout>
+                <!-- End of Layout Angka pada Informasi Area -->
+
+                <!-- Layout Deskripsi pada Informasi Area -->
+                <LinearLayout
+                    android:id="@+id/desc"
+                    android:layout_below="@+id/angka"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen24dp"
+
+                    android:layout_marginLeft="@dimen/dimen24dp"
+                    android:layout_marginEnd="@dimen/dimen24dp"
+                    android:layout_marginRight="@dimen/dimen24dp"
+                    android:layout_marginBottom="@dimen/dimen12dp"
+                    android:orientation="horizontal">
+
+                    <!-- TextView untuk deskripsi "Blood Give" -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/worksans_medium"
+
+                        android:gravity="center"
+                        android:text="@string/blood_give"
+                        android:textColor="@color/font_desc"
+                        android:textSize="@dimen/dimen12sp"/>
+                    <!-- End of TextView untuk deskripsi "Blood Give" -->
+
+                    <!-- TextView untuk deskripsi "Blood Received" -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/worksans_medium"
+
+                        android:gravity="center"
+                        android:text="@string/blood_received"
+                        android:textColor="@color/font_desc"
+                        android:textSize="@dimen/dimen12sp"/>
+                    <!-- End of TextView untuk deskripsi "Blood Received" -->
+
+                    <!-- TextView untuk deskripsi "Thanks" -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/worksans_medium"
+
+                        android:gravity="center"
+                        android:text="@string/thanks"
+                        android:textColor="@color/font_desc"
+                        android:textSize="@dimen/dimen12sp" />
+                    <!-- End of TextView untuk deskripsi "Thanks" -->
+
+                </LinearLayout>
+                <!-- End of Layout Deskripsi pada Informasi Area -->
+
+                <!-- Separator -->
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen1dp"
+                    android:layout_below="@id/desc"
+                    android:background="@color/separator" />
+                <!-- End of Separator -->
+
+                <!-- Layout untuk Menu Baris ke-1 -->
+                <LinearLayout
+                    android:id="@+id/layout_menu1"
+                    android:layout_below="@+id/separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen24dp"
+                    android:layout_marginRight="@dimen/dimen24dp"
+                    android:layout_marginLeft="@dimen/dimen24dp"
+                    android:layout_marginEnd="@dimen/dimen24dp"
+                    android:layout_marginStart="@dimen/dimen24dp">
+
+                    <!-- TextView untuk Menu "Search Donor" -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/worksans_medium"
+
+                        android:drawableTop="@drawable/ic_search_donor"
+                        android:gravity="center"
+                        android:text="Search Donor"
+                        android:textColor="@color/font_title"
+                        android:textSize="@dimen/dimen12sp"
+                        android:textStyle="bold"/>
+                    <!-- End of TextView untuk Menu "Search Donor" -->
+
+                    <!-- TextView untuk Menu "Blood Needed" -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/worksans_medium"
+
+                        android:drawableTop="@drawable/ic_blood_needed"
+                        android:gravity="center"
+                        android:text="Blood Needed"
+                        android:textColor="@color/font_title"
+                        android:textSize="@dimen/dimen12sp"
+                        android:textStyle="bold"/>
+                    <!-- End of TextView untuk Menu "Blood Needed" -->
+
+                </LinearLayout>
+                <!-- End of Layout untuk Menu Baris ke-1 -->
+
+                <!-- Layout untuk Deskripsi Menu Baris ke-1 -->
+                <LinearLayout
+                    android:id="@+id/layout_desc1"
+                    android:layout_below="@+id/layout_menu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen24dp"
+                    android:layout_marginLeft="@dimen/dimen24dp"
+                    android:layout_marginEnd="@dimen/dimen24dp"
+                    android:layout_marginStart="@dimen/dimen24dp">
+
+                    <!-- TextView untuk Deskripsi "Search Donor" -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/worksans_medium"
+                        android:gravity="center"
+                        android:text="Search donor near you"
+                        android:textColor="@color/font_desc"
+                        android:textSize="@dimen/dimen10sp" />
+                    <!-- End of TextView untuk Deskripsi "Search Donor" -->
+
+                    <!-- TextView untuk Deskripsi "Blood Needed" -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/worksans_medium"
+
+                        android:gravity="center"
+                        android:text="4 Users need blood"
+                        android:textColor="@color/font_desc"
+                        android:textSize="@dimen/dimen10sp"/>
+                    <!-- End of TextView untuk Deskripsi "Blood Needed" -->
+
+                </LinearLayout>
+                <!-- End of Layout untuk Deskripsi Menu Baris ke-1 -->
+
+                <!-- Layout untuk Menu Baris ke-2 -->
+                <LinearLayout
+                    android:id="@+id/layout_menu2"
+                    android:layout_below="@+id/layout_desc1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen24dp"
+                    android:layout_marginRight="@dimen/dimen24dp"
+                    android:layout_marginLeft="@dimen/dimen24dp"
+                    android:layout_marginEnd="@dimen/dimen24dp"
+                    android:layout_marginStart="@dimen/dimen24dp">
+
+                    <!-- TextView untuk Menu "Message" -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/worksans_medium"
+
+                        android:drawableTop="@drawable/ic_search_donor"
+                        android:gravity="center"
+                        android:text="Message"
+                        android:textColor="@color/font_title"
+                        android:textSize="@dimen/dimen12sp"
+                        android:textStyle="bold"/>
+                    <!-- End of TextView untuk Menu "Message" -->
+
+                    <!-- TextView untuk Menu "Donor History" -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/worksans_medium"
+
+                        android:drawableTop="@drawable/ic_blood_needed"
+                        android:gravity="center"
+                        android:text="Donor History"
+                        android:textColor="@color/font_title"
+                        android:textSize="@dimen/dimen12sp"
+                        android:textStyle="bold"/>
+                    <!-- End of TextView untuk Menu "Donor History" -->
+
+                </LinearLayout>
+                <!-- End of Layout untuk Menu Baris ke-2 -->
+
+                <!-- Layout untuk Deskripsi pada Menu Baris ke-2 -->
+                <LinearLayout
+                    android:id="@+id/layout_desc2"
+                    android:layout_below="@+id/layout_menu2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen24dp"
+                    android:layout_marginLeft="@dimen/dimen24dp"
+                    android:layout_marginEnd="@dimen/dimen24dp"
+                    android:layout_marginStart="@dimen/dimen24dp"
+                    android:layout_marginBottom="@dimen/dimen24dp">
+
+                    <!-- TextView untuk deskripsi pada menu "Message" -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/worksans_medium"
+                        android:gravity="center"
+                        android:text="5 New Messages"
+                        android:textColor="@color/font_desc"
+                        android:textSize="@dimen/dimen10sp" />
+                    <!-- End of TextView untuk deskripsi pada menu "Message" -->
+
+                    <!-- TextView untuk deskripsi pada menu "Donor History" -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/worksans_medium"
+
+                        android:gravity="center"
+                        android:text="5 Gives, 2 Received"
+                        android:textColor="@color/font_desc"
+                        android:textSize="@dimen/dimen10sp"/>
+                    <!-- End of TextView untuk deskripsi pada menu "Donor History" -->
+
+                </LinearLayout>
+                <!-- End of Layout untuk Deskripsi pada Menu Baris ke-2 -->
+
+            </RelativeLayout>
+            <!-- End of Layout Informasi -->
+
+        </RelativeLayout>
+        <!-- End of Layout Identitas, Informasi, serta Menu Area -->
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <!-- End of Layout container form Home -->
+
+</ScrollView>
+
+<!--
+    Tanggal     : Selasa, 26 April 2022
+    Deskripsi   : Design Activity untuk form Home
+    NIM         : 10119239
+    Nama        : Dea Inesia Sri Utami
+    Kelas       : IF6
+-->

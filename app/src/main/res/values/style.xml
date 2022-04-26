@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema hide Action Bar -->
+    <style name="HiddenTitleTheme" parent="Theme.10119239Latihan2">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <!-- End of Tema hide actionbar -->
+
+    <!-- Style EditText pada form Login -->
+    <style name="edit_login" parent="android:Widget.EditText">
+        <item name="android:paddingBottom">@dimen/dimen20dp</item>
+        <item name="fontFamily">@font/worksans_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">@dimen/dimen18sp</item>
+        <item name="maxLines">1</item>
+        <item name="android:lines">1</item>
+    </style>
+    <!-- End of Style EditText pada form Login -->
+
+    <!-- Style Underline EditText pada form Login -->
+    <style name="line_login" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+    <!-- Style Underline EditText pada form Login -->
+
+    <!-- Style Button pada form Login -->
+    <style name="button_blue" parent="Theme.AppCompat.Light">
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">@dimen/dimen3dp</item>
+        <item name="android:radius">@dimen/dimen5dp</item>
+        <item name="backgroundTint">#00000000</item>
+        <item name="android:layout_marginTop">@dimen/dimen16dp</item>
+        <item name="android:padding">@dimen/dimen16dp</item>
+        <item name="android:textSize">@dimen/dimen18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="fontFamily">@font/worksans_medium</item>
+    </style>
+    <!-- End of Style Button pada form Login -->
+
+    <!-- Style EditText pada form Register -->
+    <style name="edit_register" parent="android:Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/dimen20dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen24dp</item>
+        <item name="android:layout_marginLeft">@dimen/dimen24dp</item>
+        <item name="android:layout_marginRight">@dimen/dimen24dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen24dp</item>
+        <item name="fontFamily">@font/worksans_medium</item>
+        <item name="android:textColor">@color/font_title</item>
+        <item name="android:textColorHint">@color/font_desc</item>
+        <item name="android:textSize">@dimen/dimen18sp</item>
+        <item name="maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:theme">@style/line_register</item>
+    </style>
+    <!-- End of Style EditText pada form Register -->
+
+    <!-- Tema Underline EditText pada form Register -->
+    <style name="line_register" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/separator</item>
+        <item name="colorControlActivated">@color/separator</item>
+        <item name="colorControlHighlight">@color/separator</item>
+    </style>
+    <!-- End of Tema Underline EditText pada form Register -->
+
+    <!-- Style LinearLayout pada form Register -->
+    <style name="linear_register">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/dimen24dp</item>
+        <item name="android:layout_marginLeft">@dimen/dimen24dp</item>
+        <item name="android:layout_marginRight">@dimen/dimen24dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen24dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- End of Style LinearLayout pada form Register -->
+
+    <!-- Style RadioGroup pada form Register -->
+    <style name="radio_register">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="fontFamily">@font/worksans_medium</item>
+        <item name="android:textSize">@dimen/dimen18sp</item>
+        <item name="android:textColor">@color/font_desc</item>
+    </style>
+    <!-- End of Style RadioGroup pada form Register -->
+
+    <!-- Tema RadioGroup pada form Register -->
+    <style name="theme_radio" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:colorControlNormal">@color/light_blue</item>
+        <item name="android:colorControlActivated">@color/light_blue</item>
+        <item name="android:colorControlHighlight">@color/light_blue</item>
+    </style>
+    <!-- End of Tema RadioGroup pada form Register -->
+
+    <!-- Tema Dropdown pada form Register -->
+    <style name="theme_option" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:padding">@dimen/dimen3dp</item>
+    </style>
+    <!-- End of Tema Dropdown pada form Register -->
+
+    <!-- Style Button pada form Register -->
+    <style name="button_white" parent="Theme.AppCompat.Light">
+        <item name="android:layout_marginTop">@dimen/dimen16dp</item>
+        <item name="android:padding">@dimen/dimen16dp</item>
+        <item name="android:textSize">@dimen/dimen18sp</item>
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="fontFamily">@font/worksans_medium</item>
+    </style>
+    <!-- End of Style Button pada form Register -->
+</resources>
+
+<!--
+    Tanggal     : Selasa, 26 April 2022
+    Deskripsi   : Set Style yang digunakan pada aplikasi
+    NIM         : 10119239
+    Nama        : Dea Inesia Sri Utami
+    Kelas       : IF6
+-->

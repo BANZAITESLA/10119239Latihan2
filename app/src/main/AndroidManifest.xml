@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.disu.a10119239latihan2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.10119239Latihan2">
+
+        <!-- Form Home -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:theme="@style/HiddenTitleTheme" />
+        <!-- End of form Home -->
+
+        <!-- Form Verify -->
+        <activity
+            android:name=".VerifyActivity"
+            android:exported="false"
+            android:theme="@style/HiddenTitleTheme" />
+        <!-- End of form Verify -->
+
+        <!-- Form Almost There -->
+        <activity
+            android:name=".AlmostThereActivity"
+            android:exported="false"
+            android:theme="@style/HiddenTitleTheme" />
+        <!-- End of form Almost The -->
+
+        <!-- Form Register -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <!-- End of form Register -->
+
+        <!-- Form Login -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/HiddenTitleTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- End of form Login -->
+
+    </application>
+</manifest>
+
+<!--
+    Tanggal     : Selasa, 26 April 2022
+    Deskripsi   : Set Android Manifest untuk atur tema tiap activity
+    NIM         : 10119239
+    Nama        : Dea Inesia Sri Utami
+    Kelas       : IF6
+-->

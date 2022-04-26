@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_checked="true" android:drawable="@drawable/ic_register_terms_on" />
+    <item android:state_pressed="false" android:drawable="@drawable/ic_register_terms_off" />
+</selector>
+
+<!--
+    Tanggal     : Selasa, 26 April 2022
+    Deskripsi   : Set design check untuk terms and conditions pada form Register
+    NIM         : 10119239
+    Nama        : Dea Inesia Sri Utami
+    Kelas       : IF6
+-->

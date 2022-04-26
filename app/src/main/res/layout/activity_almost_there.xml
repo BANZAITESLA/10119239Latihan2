@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen24dp"
+    tools:context=".AlmostThereActivity">
+
+    <!-- TextView Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dimen12dp"
+
+        android:text="@string/title_almost"
+        android:fontFamily="@font/worksans_medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen36sp"/>
+    <!-- End of TextView Title -->
+
+    <!-- TextView Description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dimen48dp"
+
+        android:paddingRight="@dimen/dimen32dp"
+        android:paddingEnd="@dimen/dimen32dp"
+        android:paddingStart="@dimen/dimen32dp"
+        android:paddingLeft="@dimen/dimen32dp"
+
+        android:text="@string/desc_almost"
+        android:fontFamily="@font/worksans_medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen16sp"/>
+    <!-- TextView Description -->
+
+    <!-- Button Verify -->
+    <Button
+        android:id="@+id/button_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/verify"
+        style="@style/button_blue" />
+    <!-- End of Button Verify -->
+</LinearLayout>
+
+<!--
+    Tanggal     : Selasa, 26 April 2022
+    Deskripsi   : Design Activity untuk form Almost There
+    NIM         : 10119239
+    Nama        : Dea Inesia Sri Utami
+    Kelas       : IF6
+-->

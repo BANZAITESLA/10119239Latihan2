@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#00000000"
+        android:endColor="#00000000" />
+    <corners android:radius="@dimen/dimen5dp" />
+    <stroke android:width="@dimen/dimen3dp" android:color="@color/light_blue" />
+</shape>
+
+<!--
+    Tanggal     : Selasa, 26 April 2022
+    Deskripsi   : Set design button untuk Register pada form Register
+    NIM         : 10119239
+    Nama        : Dea Inesia Sri Utami
+    Kelas       : IF6
+-->

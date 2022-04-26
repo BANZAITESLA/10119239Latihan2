@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen24dp"
+    tools:context=".MainActivity">
+
+    <!-- Icon BloodShare -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:drawableTop="@drawable/ic_welcome_logo" />
+    <!-- End of Icon BloodShare -->
+
+    <!-- EditText Username Area-->
+    <EditText
+        style="@style/edit_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:theme="@style/line_login"
+        android:inputType="text"/>
+    <!-- End of EditText Username Area-->
+
+    <!-- EditText Password Area-->
+    <EditText
+        style="@style/edit_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:theme="@style/line_login"
+        android:inputType="textPassword"/>
+    <!-- End of EditText Password Area-->
+
+    <!-- Button Login Area-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/login"
+        style="@style/button_blue" />
+    <!-- End of Button Login Area-->
+
+    <!-- TextView OR Area-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen16dp"
+
+        android:text="@string/or"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen18sp"
+        android:fontFamily="@font/worksans_medium"/>
+    <!-- End of TextView OR Area-->
+
+    <!-- Button Connect With Facebook Area-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/fb"
+        app:icon="@drawable/ic_welcome_fb_login"
+        app:iconGravity="textStart"
+        app:iconTint="@color/white"
+
+        style="@style/button_blue" />
+    <!-- End of Button Connect With Facebook Area-->
+
+    <!-- Layout Register -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen16dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical">
+
+        <!-- TextView "doesn't have account" Area -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen12sp"
+            android:fontFamily="@font/worksans_medium"/>
+        <!-- End of TextView "doesn't have account" Area -->
+
+        <!-- Button "Register" Area -->
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+
+            android:background="#00000000"
+
+            android:text="@string/btn_register"
+            android:textAllCaps="false"
+            android:textSize="@dimen/dimen12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/worksans_medium" />
+        <!-- End of Button "Register" Area -->
+
+    </LinearLayout>
+    <!-- End of Layout Register -->
+
+</LinearLayout>
+
+<!--
+    Tanggal     : Selasa, 26 April 2022
+    Deskripsi   : Design Activity untuk form Login
+    NIM         : 10119239
+    Nama        : Dea Inesia Sri Utami
+    Kelas       : IF6
+-->

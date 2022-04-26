@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen24dp"
+    tools:context=".VerifyActivity">
+
+    <!-- TextView Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dimen12dp"
+
+        android:text="@string/title_verify"
+        android:fontFamily="@font/worksans_medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen36sp"/>
+    <!-- End of TextView Title -->
+
+    <!-- TextView Description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dimen48dp"
+
+        android:paddingRight="@dimen/dimen32dp"
+        android:paddingEnd="@dimen/dimen32dp"
+        android:paddingStart="@dimen/dimen32dp"
+        android:paddingLeft="@dimen/dimen32dp"
+
+        android:text="@string/desc_verify"
+        android:fontFamily="@font/worksans_medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen16sp"/>
+    <!-- TextView Description -->
+
+    <!-- EditText verification code -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen20dp"
+
+        android:text="@string/code"
+        android:fontFamily="@font/worksans_medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen16sp"
+        android:theme="@style/line_login"/>
+    <!-- End of EditText verification code -->
+
+    <!-- Button Send -->
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/send"
+        style="@style/button_blue" />
+    <!-- End of Button Send -->
+
+    <!-- Layout Resend code -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center_vertical">
+
+        <!-- TextView "doesn't get the code" Area -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/no_code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen12sp"
+            android:fontFamily="@font/worksans_medium"/>
+        <!-- End of TextView "doesn't get the code" Area -->
+
+        <!-- Button "Resend" Area -->
+        <Button
+            android:id="@+id/button_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+
+            android:background="#00000000"
+
+            android:text="@string/resend"
+            android:textAllCaps="false"
+            android:textSize="@dimen/dimen12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/worksans_medium" />
+        <!-- End of Button "Resend" Area -->
+
+    </LinearLayout>
+    <!-- End of Layout Resend code -->
+
+</LinearLayout>
+
+<!--
+    Tanggal     : Selasa, 26 April 2022
+    Deskripsi   : Design Activity untuk form Verify
+    NIM         : 10119239
+    Nama        : Dea Inesia Sri Utami
+    Kelas       : IF6
+-->

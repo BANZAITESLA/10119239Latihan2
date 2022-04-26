@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <!-- Toolbar dengan tombol kembali -->
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar_register" />
+
+    <!-- Shadow Toolbar -->
+    <View
+        android:layout_below="@id/toolbar_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen3dp"
+        android:background="@color/shadow_header"/>
+    <!-- End of Shadow Toolbar -->
+
+    <!-- Scrollview form register -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_register">
+
+        <!-- Layout form register -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- EditText Username Area -->
+            <EditText
+                android:id="@+id/edit_username"
+
+                android:layout_marginTop="@dimen/dimen24dp"
+
+                android:hint="@string/username"
+                android:inputType="text"
+                style="@style/edit_register" />
+            <!-- End of EditText Username Area -->
+
+            <!-- EditText Email Area -->
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_below="@id/edit_username"
+
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                style="@style/edit_register" />
+            <!-- End of EditText Email Area -->
+
+            <!-- EditText Phone Number Area -->
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_below="@id/edit_email"
+
+                android:hint="@string/phone"
+                android:inputType="phone"
+                style="@style/edit_register"/>
+            <!-- End of EditText Phone Number Area -->
+
+            <!-- RadioGrup Gender Area -->
+            <RadioGroup
+                android:id="@+id/radio_gender"
+                android:layout_below="@id/edit_phone"
+                style="@style/linear_register"
+                android:paddingLeft="@dimen/dimen12dp"
+                android:paddingStart="@dimen/dimen12dp"
+                android:paddingRight="@dimen/dimen12dp"
+                android:paddingEnd="@dimen/dimen12dp">
+
+                <!-- RadioButton untuk "Male" -->
+                <RadioButton
+                    style="@style/radio_register"
+                    android:theme="@style/theme_radio"
+                    android:text="@string/male"/>
+                <!-- End of RadioButton untuk "Male" -->
+
+                <!-- RadioButton untuk "Female" -->
+                <RadioButton
+                    style="@style/radio_register"
+                    android:theme="@style/theme_radio"
+                    android:text="@string/female"/>
+                <!-- End of RadioButton untuk "Female" -->
+
+            </RadioGroup>
+            <!-- End of RadioGrup Gender Area -->
+
+            <!-- Layout Dropdown Blood Type Area -->
+            <LinearLayout
+                android:id="@+id/layout_blood"
+                android:layout_below="@id/radio_gender"
+                style="@style/linear_register">
+
+                <!-- Dropdown Blood Type Area -->
+                <Spinner
+                    android:id="@+id/spinner_blood"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen6dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/font_desc"
+                    app:popupTheme="@style/theme_option"
+                    android:dropDownWidth="150dp" />
+                <!-- End of Dropdown Blood Type Area -->
+
+                <!-- Dropdown Rhesus Area -->
+                <Spinner
+                    android:id="@+id/spinner_rhesus"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen6dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/font_desc"
+                    app:popupTheme="@style/theme_option"
+                    android:dropDownWidth="150dp" />
+                <!-- End of Dropdown Rhesus Area -->
+
+            </LinearLayout>
+            <!-- End of Layout Dropdown Blood Type Area -->
+
+            <!-- EditText Password Area -->
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_below="@id/layout_blood"
+
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                style="@style/edit_register" />
+            <!-- End of EditText Password Area -->
+
+            <!-- EditText Retype Password Area -->
+            <EditText
+                android:id="@+id/edit_retype"
+                android:layout_below="@id/edit_password"
+
+                android:hint="@string/retype"
+                android:inputType="textPassword"
+                style="@style/edit_register" />
+            <!-- End of EditText Retype Password Area -->
+
+            <!-- RadioGrup untuk option Personal / Organization -->
+            <RadioGroup
+                android:id="@+id/radio_origin"
+                android:layout_below="@id/edit_retype"
+                style="@style/linear_register"
+                android:paddingLeft="@dimen/dimen12dp"
+                android:paddingStart="@dimen/dimen12dp"
+                android:paddingRight="@dimen/dimen12dp"
+                android:paddingEnd="@dimen/dimen12dp">
+
+                <!-- RadioButton untuk option Personal -->
+                <RadioButton
+                    style="@style/radio_register"
+                    android:theme="@style/theme_radio"
+                    android:text="@string/personal"/>
+                <!-- End of RadioButton untuk option Personal -->
+
+                <!-- RadioButton untuk option Organization -->
+                <RadioButton
+                    style="@style/radio_register"
+                    android:theme="@style/theme_radio"
+                    android:text="@string/organization"/>
+                <!-- End of RadioButton untuk option Organization -->
+
+            </RadioGroup>
+            <!-- End of RadioGrup untuk option Personal / Organization -->
+
+            <!-- Layout Dropdown Job -->
+            <LinearLayout
+                android:id="@+id/layout_job"
+                android:layout_below="@id/radio_origin"
+                style="@style/linear_register">
+
+                <!-- Dropdown Job Area -->
+                <Spinner
+                    android:id="@+id/spinner_job"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen6dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/font_desc"
+                    app:popupTheme="@style/theme_option"
+                    android:dropDownWidth="match_parent" />
+                <!-- End of Dropdown Job Area -->
+
+            </LinearLayout>
+            <!-- End of Layout Dropdown Job -->
+
+            <!-- EditText Home Address Area -->
+            <EditText
+                android:id="@+id/edit_home"
+                style="@style/edit_register"
+
+                android:layout_below="@id/layout_job"
+                android:hint="@string/home_address"
+                android:inputType="text" />
+            <!-- End of EditText Home Address Area -->
+
+            <!-- EditText Default Location Area -->
+            <EditText
+                android:id="@+id/def_loc"
+                style="@style/edit_register"
+
+                android:layout_below="@id/edit_home"
+                android:drawableRight="@drawable/ic_blood_needed_location"
+                android:hint="@string/def_loc"
+                android:inputType="text" />
+            <!-- End of EditText Default Location Area -->
+
+            <!-- Layout untuk Terms and Conditions -->
+            <LinearLayout
+                android:id="@+id/layout_agreement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/def_loc"
+                android:layout_marginStart="@dimen/dimen24dp"
+                android:layout_marginLeft="@dimen/dimen24dp"
+                android:layout_marginTop="@dimen/dimen20dp"
+                android:layout_marginEnd="@dimen/dimen24dp"
+                android:layout_marginRight="@dimen/dimen24dp"
+                android:layout_marginBottom="@dimen/dimen20dp"
+                android:gravity="left|center_vertical">
+
+                <!-- Checkbox Area -->
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen12dp"
+                    android:layout_marginRight="@dimen/dimen12dp"
+                    android:button="@drawable/ic_checkbox" />
+                <!-- End of Checkbox Area -->
+
+                <!-- TextView Area -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/worksans_medium"
+                    android:text="@string/agreement"
+                    android:textColor="@color/font_desc"
+                    android:textSize="@dimen/dimen12sp" />
+                <!-- End of TextView Area -->
+
+            </LinearLayout>
+            <!-- End of Layout untuk Terms and Conditions -->
+
+            <!-- Button "REGISTER" -->
+            <Button
+                android:id="@+id/button_finish_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_agreement"
+
+                android:layout_marginStart="@dimen/dimen24dp"
+                android:layout_marginLeft="@dimen/dimen24dp"
+                android:layout_marginEnd="@dimen/dimen24dp"
+                android:layout_marginRight="@dimen/dimen24dp"
+                android:layout_marginBottom="@dimen/dimen24dp"
+
+                android:text="@string/btn_register"
+                android:background="@drawable/ic_button_white"
+                style="@style/button_white"
+                android:textAllCaps="true" />
+            <!-- End of Button "REGISTER" -->
+
+        </RelativeLayout>
+        <!-- End of Layout form register -->
+
+    </ScrollView>
+    <!-- End of ScrollView form register -->
+
+</RelativeLayout>
+
+<!--
+    Tanggal     : Selasa, 26 April 2022
+    Deskripsi   : Design Activity untuk fom Register
+    NIM         : 10119239
+    Nama        : Dea Inesia Sri Utami
+    Kelas       : IF6
+-->
