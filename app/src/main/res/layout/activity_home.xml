@@ -342,7 +342,7 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/worksans_medium"
 
-                        android:drawableTop="@drawable/ic_search_donor"
+                        android:drawableTop="@drawable/ic_message"
                         android:gravity="center"
                         android:text="Message"
                         android:textColor="@color/font_title"
@@ -357,7 +357,7 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/worksans_medium"
 
-                        android:drawableTop="@drawable/ic_blood_needed"
+                        android:drawableTop="@drawable/ic_donor_history"
                         android:gravity="center"
                         android:text="Donor History"
                         android:textColor="@color/font_title"

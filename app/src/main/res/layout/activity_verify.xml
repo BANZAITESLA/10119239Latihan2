@@ -48,9 +48,10 @@
         android:gravity="center"
         android:paddingBottom="@dimen/dimen20dp"
 
-        android:text="@string/code"
-        android:fontFamily="@font/worksans_medium"
+        android:hint="@string/code"
         android:textColor="@color/white"
+        android:fontFamily="@font/worksans_medium"
+        android:textColorHint="@color/white"
         android:textSize="@dimen/dimen16sp"
         android:theme="@style/line_login"/>
     <!-- End of EditText verification code -->
